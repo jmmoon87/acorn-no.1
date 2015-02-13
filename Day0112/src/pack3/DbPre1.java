@@ -14,7 +14,7 @@ public class DbPre1 {
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 		} catch (Exception e) {
-			System.out.println("·Îµù½ÇÆĞ"+e);
+			System.out.println("í•œê¸€ì´ ê¹¨ì¡Œì–´"+e);
 		}
 		
 		try {
@@ -22,35 +22,35 @@ public class DbPre1 {
 			
 			String sql ="";
 			
-			//Ãß°¡
+			//ï¿½ß°ï¿½
 			/*sql = "insert into sangdata values(?,?,?,?)";
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, "100");
-			pstmt.setString(2, "¿¬ÇÊ");
+			pstmt.setString(2, "ï¿½ï¿½ï¿½ï¿½");
 			pstmt.setString(3, "5");
 			pstmt.setInt(4, 2000);
 			
 			if (pstmt.executeUpdate() == 0 )
-				System.out.println("Ãß°¡ ½ÇÆĞ");*/
+				System.out.println("ï¿½ß°ï¿½ ï¿½ï¿½ï¿½ï¿½");*/
 			
-			//¼öÁ¤
+			//ï¿½ï¿½ï¿½ï¿½
 			/*sql = " update sangdata set sang = ?, su = ?, dan = ? where code = ?";
 			
 			pstmt = conn.prepareStatement(sql);
-			pstmt.setString(1, "¸¸³âÇÊ");
+			pstmt.setString(1, "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 			pstmt.setString(2, "7");
 			pstmt.setString(3, "7000");
 			pstmt.setString(4, "100");
 			if (pstmt.executeUpdate() <= 0 )
-				System.out.println("¼öÁ¤ ½ÇÆĞ");*/
+				System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");*/
 			
-			//»èÁ¦
+			//ï¿½ï¿½ï¿½ï¿½
 			/*sql = " delete from  sangdata where  where code = ?";
 			
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, "100");
 			if (pstmt.executeUpdate() <= 0 )
-				System.out.println("»èÁ¦ ½ÇÆĞ");*/
+				System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");*/
 			
 			sql = " select * from sangdata";
 
@@ -96,7 +96,7 @@ public class DbPre1 {
 			}
 			*/
 			/*System.out.println();
-			String sang = "¸¶";
+			String sang = "ï¿½ï¿½";
 			//sql = " select * from sangdata where sang like '"+sang +"%'" ;
 			sql = " select * from sangdata where sang like?" ;
 			pstmt = conn.prepareStatement(sql);
@@ -111,7 +111,7 @@ public class DbPre1 {
 						rs.getString(4));
 			}*/
 		} catch (Exception e) {
-			System.out.println("Ã³¸®½ÇÆĞ "+ e);
+			System.out.println("Ã³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ "+ e);
 		}try {
 			if(rs!=null) rs.close();
 			if(pstmt!=null) pstmt.close();
